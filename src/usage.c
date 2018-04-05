@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   usage.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdurot <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: svigouro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/11 23:54:22 by qdurot            #+#    #+#             */
-/*   Updated: 2017/10/11 23:54:23 by qdurot           ###   ########.fr       */
+/*   Created: 2018/04/05 13:25:14 by svigouro          #+#    #+#             */
+/*   Updated: 2018/04/05 13:25:23 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ void	usage(int error)
 		ft_putendl_fd("| celtic | bird]", 2);
 	}
 	else if (error == 1)
-	{
 		ft_putendl_fd("Mlx error, verify environement...", 2);
-	}
 	exit(0);
 }

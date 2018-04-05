@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdurot <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: svigouro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/11 23:53:55 by qdurot            #+#    #+#             */
-/*   Updated: 2017/10/11 23:53:56 by qdurot           ###   ########.fr       */
+/*   Created: 2018/04/05 13:28:02 by svigouro          #+#    #+#             */
+/*   Updated: 2018/04/05 13:28:04 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int		init(t_env *e, char *arg)
 {
 	char	*title;
 
-	title = ft_strjoin("Fractol          o_O         ", arg);
+	title = ft_strjoin("Fractol           -          ", arg);
 	if (!(e->mlx = mlx_init()))
 		return (-1);
 	e->win = mlx_new_window(e->mlx, WIDTH, HEIGHT, title);
