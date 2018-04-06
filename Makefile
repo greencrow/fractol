@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: svigouro <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: svigouro <svigouro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/15 14:59:55 by svigouro          #+#    #+#              #
-#    Updated: 2018/04/05 11:16:57 by svigouro         ###   ########.fr        #
+#    Updated: 2018/04/06 10:40:46 by svigouro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@
 SRC_PATH = src
 SRC_NAME = main.c usage.c text.c zoom.c color.c color2.c choice.c draw.c \
 		   hook.c bird.c burn.c celtic.c julia.c juliux.c mandelbrot.c move.c \
-		   multibrot.c newton.c 
+		   multibrot.c newton.c
 OBJ_PATH = obj
 OBJ_NAME = $(SRC_NAME:.c=.o)
 CPPFLAGS = -Iinclude
@@ -76,4 +76,3 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
