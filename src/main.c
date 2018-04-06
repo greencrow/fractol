@@ -6,7 +6,7 @@
 /*   By: svigouro <svigouro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/06 10:38:24 by svigouro          #+#    #+#             */
-/*   Updated: 2018/04/06 12:08:35 by svigouro         ###   ########.fr       */
+/*   Updated: 2018/04/06 12:41:17 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,19 +60,14 @@ int		main(int argc, char **argv)
 {
 	t_env		e;
 
-	if (argc < 2 || argc > 2)
-		usage(0);
-	if (argc == 2)
-	{
-		if (ft_strcmp(argv[1], "newton") &&
-			ft_strcmp(argv[1], "julia") &&
-			ft_strcmp(argv[1], "mandelbrot") &&
-			ft_strcmp(argv[1], "burningship") &&
-			ft_strcmp(argv[1], "multibrot"))
-			usage(0);
-		if (init(&e, argv[1]) < 0)
-			usage(1);
-		choice(argv[1], &e);
-	}
+	if (argc != 2)
+		return (error(0));
+	if (ft_strcmp(argv[1], "newton") && ft_strcmp(argv[1], "julia") &&
+		ft_strcmp(argv[1], "mandelbrot") && ft_strcmp(argv[1], "burningship") &&
+		ft_strcmp(argv[1], "multibrot"))
+		return (error(0));
+	if (init(&e, argv[1]) < 0)
+		return (error(1));
+	choice(argv[1], &e);
 	hooks(&e);
 }

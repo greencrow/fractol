@@ -6,7 +6,7 @@
 /*   By: qdurot <qdurot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/11 23:54:33 by qdurot            #+#    #+#             */
-/*   Updated: 2018/04/06 12:08:09 by svigouro         ###   ########.fr       */
+/*   Updated: 2018/04/06 12:40:23 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,7 +119,7 @@ void					reset(t_env *e);
 void					hooks(t_env *e);
 void					redraw(t_env *e);
 void					tg_text(t_env *e);
-void					usage(int error);
+int						error(int id);
 void					stop_mov(t_env *e);
 void					init_img(t_env *e);
 void					color_1(t_fractal *f);
