@@ -6,7 +6,7 @@
 /*   By: svigouro <svigouro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/06 11:24:09 by svigouro          #+#    #+#             */
-/*   Updated: 2018/04/06 12:34:29 by svigouro         ###   ########.fr       */
+/*   Updated: 2018/04/06 13:49:30 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,12 +44,12 @@ int		key_hook(int keycode, t_env *e)
 		reset(e);
 	else if (keycode == KEY_MINUS || keycode == KEY_EQUAL)
 		key_zoom(keycode, e);
-	else if (keycode >= KEY_1 && keycode <= KEY_0)
+	else if (keycode >= KEY_1 && keycode <= KEY_5)
 		change(keycode, e);
 	else if (keycode == KEY_COMMA || keycode == KEY_DOT)
 		mov_phaze(keycode, e);
-	else if (keycode == KEY_DOWN || keycode == KEY_UP ||
-			keycode == KEY_LEFT || keycode == KEY_RIGHT)
+	else if (keycode == KEY_DOWN || keycode == KEY_UP || keycode == KEY_LEFT ||
+		keycode == KEY_RIGHT)
 		move(keycode, e);
 	else if (keycode == KEY_OPEN_BRACKET || keycode == KEY_CLOSE_BRACKET)
 		iter(keycode, e);

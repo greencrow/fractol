@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   move.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdurot <qdurot@student.42.fr>              +#+  +:+       +#+        */
+/*   By: svigouro <svigouro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/11 23:54:03 by qdurot            #+#    #+#             */
-/*   Updated: 2018/04/06 12:04:18 by svigouro         ###   ########.fr       */
+/*   Created: 2018/04/06 13:35:02 by svigouro          #+#    #+#             */
+/*   Updated: 2018/04/06 13:59:44 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,8 +72,6 @@ int			mmove(int x, int y, t_env *e)
 			e->f.n1 = (x * 6.0 / WIDTH);
 			e->f.n2 = (y * 6.0 / HEIGHT);
 		}
-		else if (e->f.type == MULTI)
-			e->f.multi -= 0.001 * (-x + WIDTH / 2);
 	}
 	else if (e->f.dndrop)
 	{

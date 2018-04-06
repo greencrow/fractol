@@ -6,7 +6,7 @@
 /*   By: svigouro <svigouro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/06 10:38:24 by svigouro          #+#    #+#             */
-/*   Updated: 2018/04/06 12:41:17 by svigouro         ###   ########.fr       */
+/*   Updated: 2018/04/06 12:50:17 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,9 @@ int		init(t_env *e, char *arg)
 {
 	char	*title;
 
-	title = ft_strjoin("Fractol           -          ", arg);
+	arg[0] = ft_toupper(arg[0]);
+	title = ft_strjoin("Fractol\t-\t", arg);
+	arg[0] = ft_tolower(arg[0]);
 	if (!(e->mlx = mlx_init()))
 		return (-1);
 	e->win = mlx_new_window(e->mlx, WIDTH, HEIGHT, title);

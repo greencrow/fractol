@@ -6,7 +6,7 @@
 #    By: svigouro <svigouro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/15 14:59:55 by svigouro          #+#    #+#              #
-#    Updated: 2018/04/06 12:09:26 by svigouro         ###   ########.fr        #
+#    Updated: 2018/04/06 12:44:23 by svigouro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 .SUFFIXES:
 
 SRC_PATH = src
-SRC_NAME = main.c usage.c text.c zoom.c color.c color2.c choice.c draw.c \
+SRC_NAME = main.c error.c text.c zoom.c color.c color2.c choice.c draw.c \
 		   hook.c burn.c mandelbrot.c move.c julia.c multibrot.c newton.c
 OBJ_PATH = obj
 OBJ_NAME = $(SRC_NAME:.c=.o)
