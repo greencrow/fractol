@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   hook.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdurot <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: svigouro <svigouro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/11 23:53:44 by qdurot            #+#    #+#             */
-/*   Updated: 2017/10/11 23:53:47 by qdurot           ###   ########.fr       */
+/*   Created: 2018/04/06 11:24:09 by svigouro          #+#    #+#             */
+/*   Updated: 2018/04/06 11:24:38 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ void	iter(int keycode, t_env *e)
 		if (e->f.it_max == 0)
 			e->f.it_max++;
 	}
-	redraw(e);
+	if (e->f.it_max > 0)
+		redraw(e);
 }
 
 int		key_hook(int keycode, t_env *e)

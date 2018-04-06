@@ -6,7 +6,7 @@
 #    By: svigouro <svigouro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/15 14:59:55 by svigouro          #+#    #+#              #
-#    Updated: 2018/04/06 10:40:46 by svigouro         ###   ########.fr        #
+#    Updated: 2018/04/06 11:24:58 by svigouro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ MLXFLAGS = -lmlx -framework OpenGL -framework AppKit
 
 NAME = fractol
 CC = gcc
-CFLAGS = -Werror -Wextra -Wall
+CFLAGS = -Werror -Wextra -Wall -O2
 
 SRC = $(addprefix $(SRC_PATH)/,$(SRC_NAME))
 OBJ = $(addprefix $(OBJ_PATH)/,$(OBJ_NAME))
