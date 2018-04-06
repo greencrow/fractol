@@ -6,7 +6,7 @@
 /*   By: svigouro <svigouro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/06 11:24:09 by svigouro          #+#    #+#             */
-/*   Updated: 2018/04/06 11:24:38 by svigouro         ###   ########.fr       */
+/*   Updated: 2018/04/06 11:30:51 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,6 @@ int		key_hook(int keycode, t_env *e)
 		change_color(e);
 	else if (keycode == KEY_T)
 		tg_text(e);
-	else if (keycode == KEY_Z)
-		tg_it_zoom(e);
 	else if (keycode == KEY_SPACEBAR)
 		stop_mov(e);
 	else if (keycode == KEY_BACKSPACE)

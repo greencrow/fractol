@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   fractol.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdurot <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: qdurot <qdurot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/11 23:54:33 by qdurot            #+#    #+#             */
-/*   Updated: 2017/10/11 23:54:34 by qdurot           ###   ########.fr       */
+/*   Updated: 2018/04/06 12:08:09 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,12 @@
 # include <unistd.h>
 # include <fcntl.h>
 # include <math.h>
-# include <pthread.h>
 # include "libft.h"
 # include "mlx.h"
 # include "mlx_keys.h"
 
 # define WIDTH 1280
-# define HEIGHT 800
+# define HEIGHT 720
 
 # define KEYPRESS			2
 # define KEYPRESSMASK		(1L<<0)
@@ -48,9 +47,6 @@
 # define NEWTON	3
 # define BURN	4
 # define MULTI	5
-# define JULIUX	6
-# define CELTIC	7
-# define BIRD	8
 
 typedef struct			s_col
 {
@@ -115,12 +111,6 @@ typedef struct			s_env
 	t_fractal	f;
 }						t_env;
 
-void					bird_init(t_fractal *f);
-void					ft_bird(t_fractal *f);
-void					celtic_init(t_fractal *f);
-void					ft_celtic(t_fractal *f);
-void					juliux_init(t_fractal *f);
-void					ft_juliux(t_fractal *f);
 void					text(t_env *e);
 void					set(t_env *e);
 int						quit(t_env *e);
@@ -132,7 +122,6 @@ void					tg_text(t_env *e);
 void					usage(int error);
 void					stop_mov(t_env *e);
 void					init_img(t_env *e);
-void					tg_it_zoom(t_env *e);
 void					color_1(t_fractal *f);
 void					color_2(t_fractal *f);
 void					color_7(t_fractal *f);

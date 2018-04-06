@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   julia.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: svigouro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: svigouro <svigouro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/05 13:31:26 by svigouro          #+#    #+#             */
-/*   Updated: 2018/04/05 15:33:48 by svigouro         ###   ########.fr       */
+/*   Updated: 2018/04/06 11:54:43 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ void	julia_init(t_fractal *f)
 	f->x2 = 3.2;
 	f->y1 = -2;
 	f->y2 = 2;
-	f->cr = 0.285;
-	f->ci = 0.01;
-	f->it_max = 26;
-	f->color = 6;
+	f->cr = 0.0;
+	f->ci = 1.0;
+	f->it_max = 13;
+	f->color = 7;
 	f->c.phas1 = 8;
 	f->c.phas2 = 3;
 	f->c.phas3 = 5;

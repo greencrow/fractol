@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   draw.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdurot <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: qdurot <qdurot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/11 23:53:41 by qdurot            #+#    #+#             */
-/*   Updated: 2017/10/11 23:56:00 by qdurot           ###   ########.fr       */
+/*   Updated: 2018/04/06 12:03:49 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,4 @@ void	redraw(t_env *e)
 		draw(e, ft_burn);
 	else if (e->f.type == MULTI)
 		draw(e, ft_multibrot);
-	else if (e->f.type == JULIUX)
-		draw(e, ft_juliux);
-	else if (e->f.type == CELTIC)
-		draw(e, ft_celtic);
-	else if (e->f.type == BIRD)
-		draw(e, ft_bird);
 }

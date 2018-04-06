@@ -6,7 +6,7 @@
 #    By: svigouro <svigouro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/15 14:59:55 by svigouro          #+#    #+#              #
-#    Updated: 2018/04/06 11:24:58 by svigouro         ###   ########.fr        #
+#    Updated: 2018/04/06 12:09:26 by svigouro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,7 @@
 
 SRC_PATH = src
 SRC_NAME = main.c usage.c text.c zoom.c color.c color2.c choice.c draw.c \
-		   hook.c bird.c burn.c celtic.c julia.c juliux.c mandelbrot.c move.c \
-		   multibrot.c newton.c
+		   hook.c burn.c mandelbrot.c move.c julia.c multibrot.c newton.c
 OBJ_PATH = obj
 OBJ_NAME = $(SRC_NAME:.c=.o)
 CPPFLAGS = -Iinclude
@@ -27,7 +26,7 @@ MLXFLAGS = -lmlx -framework OpenGL -framework AppKit
 
 NAME = fractol
 CC = gcc
-CFLAGS = -Werror -Wextra -Wall -O2
+CFLAGS = -Werror -Wextra -Wall -O3
 
 SRC = $(addprefix $(SRC_PATH)/,$(SRC_NAME))
 OBJ = $(addprefix $(OBJ_PATH)/,$(OBJ_NAME))

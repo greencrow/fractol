@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   move.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdurot <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: qdurot <qdurot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/11 23:54:03 by qdurot            #+#    #+#             */
-/*   Updated: 2017/10/11 23:54:05 by qdurot           ###   ########.fr       */
+/*   Updated: 2018/04/06 12:04:18 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ int			mmove(int x, int y, t_env *e)
 {
 	if (e->f.stop)
 	{
-		if (e->f.type == JULIA || e->f.type == JULIUX)
+		if (e->f.type == JULIA)
 		{
 			e->f.cr = 0.004 * (-x + WIDTH / 2);
 			e->f.ci = 0.002 * (-y + HEIGHT / 2);

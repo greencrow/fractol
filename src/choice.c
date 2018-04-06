@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   choice.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: svigouro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: svigouro <svigouro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/05 13:30:13 by svigouro          #+#    #+#             */
-/*   Updated: 2018/04/05 13:31:30 by svigouro         ###   ########.fr       */
+/*   Updated: 2018/04/06 12:03:25 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,6 @@ void	change(int keycode, t_env *e)
 		burn_init(&e->f);
 	if (keycode == KEY_5)
 		multi_init(&e->f);
-	if (keycode == KEY_6)
-		juliux_init(&e->f);
-	if (keycode == KEY_7)
-		celtic_init(&e->f);
-	if (keycode == KEY_8)
-		bird_init(&e->f);
 	redraw(e);
 }
 
@@ -59,12 +53,6 @@ int		choice(char *arg, t_env *e)
 		burn_init(&e->f);
 	else if (!ft_strcmp(arg, "multibrot"))
 		multi_init(&e->f);
-	else if (!ft_strcmp(arg, "juliux"))
-		juliux_init(&e->f);
-	else if (!ft_strcmp(arg, "celtic"))
-		celtic_init(&e->f);
-	else if (!ft_strcmp(arg, "bird"))
-		bird_init(&e->f);
 	redraw(e);
 	return (0);
 }

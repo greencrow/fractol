@@ -6,7 +6,7 @@
 /*   By: svigouro <svigouro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/06 10:38:24 by svigouro          #+#    #+#             */
-/*   Updated: 2018/04/06 10:56:07 by svigouro         ###   ########.fr       */
+/*   Updated: 2018/04/06 12:08:35 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,12 +53,6 @@ void	reset(t_env *e)
 		burn_init(&e->f);
 	else if (e->f.type == MULTI)
 		multi_init(&e->f);
-	else if (e->f.type == JULIUX)
-		juliux_init(&e->f);
-	else if (e->f.type == CELTIC)
-		celtic_init(&e->f);
-	else if (e->f.type == BIRD)
-		bird_init(&e->f);
 	redraw(e);
 }
 
@@ -74,10 +68,7 @@ int		main(int argc, char **argv)
 			ft_strcmp(argv[1], "julia") &&
 			ft_strcmp(argv[1], "mandelbrot") &&
 			ft_strcmp(argv[1], "burningship") &&
-			ft_strcmp(argv[1], "multibrot") &&
-			ft_strcmp(argv[1], "juliux") &&
-			ft_strcmp(argv[1], "celtic") &&
-			ft_strcmp(argv[1], "bird"))
+			ft_strcmp(argv[1], "multibrot"))
 			usage(0);
 		if (init(&e, argv[1]) < 0)
 			usage(1);

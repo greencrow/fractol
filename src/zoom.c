@@ -3,22 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   zoom.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qdurot <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: qdurot <qdurot@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/11 23:54:27 by qdurot            #+#    #+#             */
-/*   Updated: 2017/10/11 23:54:28 by qdurot           ###   ########.fr       */
+/*   Updated: 2018/04/06 11:29:21 by svigouro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
-
-void	tg_it_zoom(t_env *e)
-{
-	if (e->f.it_zoom)
-		e->f.it_zoom = 0;
-	else
-		e->f.it_zoom = 1;
-}
 
 void	key_zoom(int keycode, t_env *e)
 {
